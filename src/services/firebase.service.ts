@@ -1,4 +1,4 @@
-import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInAnonymously, signInWithPopup } from 'firebase/auth';
+import { FacebookAuthProvider, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from 'firebase/auth';
 import { doc, getFirestore, setDoc } from 'firebase/firestore';
 
 import { Firebase } from '../configs/@';
@@ -32,7 +32,7 @@ class Service {
 
     logout = () => this.Auth.signOut();
 
-    signInAnonymously = () => signInAnonymously( this.Auth );
+    signInWithFacebook = () => signInWithPopup( this.Auth, new FacebookAuthProvider());
     signInWithGoogle = () => signInWithPopup( this.Auth, new GoogleAuthProvider());
 }
 
