@@ -17,8 +17,7 @@ export default function App() {
     const location = useLocation();
     const navigate = useNavigate();
 
-    console.log( location.pathname );
-    
+
 /*  Component Layout
 /*   *   *   *   *   *   *   *   *   *   */
 return(

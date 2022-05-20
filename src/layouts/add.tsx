@@ -41,7 +41,7 @@ return(
         users?.filter( user => user.uid !== Firebase.Auth.currentUser?.uid ).map( user => (
         <li className='preview list-group-item d-flex justify-content-between align-items-start'
             key={ user.uid }
-            onClick={ () => navigate( -1 ) }
+            onClick={ () => Messages.chat( Firebase.Auth.currentUser?.uid || '', user.uid ).then( res => navigate( -1 )) }
         >
 
             <img src={ user.photoURL } alt={ user.displayName } />
