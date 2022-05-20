@@ -1,0 +1,15 @@
+main#chat {
+    
+    flex-grow: 1;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-content: stretch;
+    align-items: stretch;
+}

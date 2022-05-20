@@ -1,0 +1,29 @@
+main#add {
+
+    flex-grow: 1;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+
+    .input-group {
+
+        span    { border-top-left-radius: 1rem; border-bottom-left-radius: 1rem; }
+        input   { border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; }
+    }
+
+    ul.list-group {
+
+        flex-grow: 1;
+
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}

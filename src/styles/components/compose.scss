@@ -1,0 +1,32 @@
+section.compose {
+
+    gap: 10px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-end;
+
+    textarea {
+
+        flex-grow: 1;
+        
+        display: block;
+        width: fit-content;
+
+
+        border-radius: 1rem;
+    }
+
+    button {
+
+        display: block;
+        width: fit-content;
+
+
+        border-radius: 2rem;
+    }
+}

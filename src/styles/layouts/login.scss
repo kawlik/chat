@@ -1,0 +1,26 @@
+main#login {
+
+    flex-grow: 1;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    form {
+
+        min-width: 280px;
+        max-width: 560px;
+
+        gap: 10px;
+        padding: 10px;
+        margin: auto;
+
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+    }
+}
